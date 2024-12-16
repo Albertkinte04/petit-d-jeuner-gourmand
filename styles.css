@@ -1,0 +1,180 @@
+/* Styles généraux */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* En-tête */
+header {
+    background: #ffcc00;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Menu */
+#menu {
+    text-align: center;
+    padding: 30px;
+}
+
+#menu h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.item img {
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.item h3 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+}
+
+.item p {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.item button {
+    background: #ffcc00;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1rem;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.item button:hover {
+    background: #e6b800;
+}
+
+/* Panier */
+#cart {
+    padding: 20px;
+    background: #fff;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#cart h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+#cart-items {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+#cart-items li {
+    margin: 5px 0;
+    font-size: 1.2rem;
+}
+
+#order-button {
+    background: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#order-button:hover {
+    background: #218838;
+}
+
+/* Pied de page */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    margin-top: 20px;
+}
+/* Conteneur général des champs */
+#order-details {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+}
+
+/* Style des labels */
+#order-details label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Champs de texte */
+#order-details input[type="text"],
+#order-details textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+/* Effet au focus */
+#order-details input[type="text"]:focus,
+#order-details textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Zone de texte (adresse) */
+#order-details textarea ,phone-number{
+    resize: vertical;
+    min-height: 70px;
+    max-height: 150px;
+}

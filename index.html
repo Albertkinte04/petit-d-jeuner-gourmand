@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petit Déjeuner Gourmand</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- En-tête -->
+    <header>
+        <h1>Petit Déjeuner Gourmand</h1>
+        <p>Plus de 10 délices matinaux pour bien commencer votre journée !</p>
+    </header>
+<section id="menu">
+    <h2>Nos Variétés de Petits Déjeuners</h2>
+    <div class="menu-container">
+        <!-- Plat 1 -->
+        <div class="item">
+            <img src="./CANVA/croisants.jpg" alt="Croissant">
+            <h3>Croissant Beurre</h3>
+            <p> 3 croisants</p>
+            <p>Prix : 1000.00 FCFA</p>
+            <label for="quantity-croissant">Quantité :</label>
+            <input type="number" id="quantity-croissant" min="1" value="1">
+            <button onclick="addToCart('Croissant Beurre', 1000.00, 'quantity-croissant')">Commander</button>
+        </div>
+
+        <!-- Plat 2 -->
+        <div class="item">
+            <img src="./CANVA/eee.jpg" alt="Beignets">
+            <h3>Beignets Africains</h3>
+            <p>10 Beignets</p>
+            <p>Prix : 200.00 FCFA</p>
+            <label for="quantity-beignets">Quantité :</label>
+            <input type="number" id="quantity-beignets" min="1" value="1">
+            <button onclick="addToCart('Beignets Africains', 200.00, 'quantity-beignets')">Commander</button>
+        </div>
+
+        <!-- Plat 3 -->
+        <div class="item">
+            <img src="./CANVA/riz au lait .jpg" alt="riz au lait">
+            <h3>riz au lait</h3>
+            <p>1 bole</p>
+            <p>Prix : 300.00 FCFA</p>
+            <label for="quantity-lait">Quantité :</label>
+            <input type="number" id="quantity-lait" min="1" value="1">
+            <button onclick="addToCart('Lait Chaud', 300.00, 'quantity-lait')">Commander</button>
+        </div>
+
+        <!-- Plat 4 -->
+        <div class="item">
+            <img src="./CANVA/597d68c29c7458abfb936f7ecc8e5644.jpg" alt="Pain au Chocolat">
+            <h3>Pain au Chocolat</h3>
+            <p>1 pain</p>
+            <p>Prix : 300.00 FCFA</p>
+            <label for="quantity-pain-chocolat">Quantité :</label>
+            <input type="number" id="quantity-pain-chocolat" min="1" value="1">
+            <button onclick="addToCart('Pain au Chocolat', 300.00, 'quantity-pain-chocolat')">Commander</button>
+        </div>
+
+        <!-- Plat 5 -->
+        <div class="item">
+            <img src="./CANVA/Pancakes au Sirop d’Érable.jpg" alt="Pancakes">
+            <h3>Pancakes au Sirop d’Érable</h3>
+            <p>.......</p>
+            <p>Prix : 500.00 FCFA</p>
+            <label for="quantity-pancakes">Quantité :</label>
+            <input type="number" id="quantity-pancakes" min="1" value="1">
+            <button onclick="addToCart('Pancakes au Sirop d’Érable', 500.00, 'quantity-pancakes')">Commander</button>
+        </div>
+
+        <!-- Plat 6 -->
+        <div class="item">
+            <img src="./CANVA/Omelette Nature1.jpg" alt="Omelette">
+            <h3>Omelette Nature</h3>
+            <p>2 oeufs</p>
+            <p>Prix : 500.00 FCFA</p>
+            <label for="quantity-omelette">Quantité :</label>
+            <input type="number" id="quantity-omelette" min="1" value="1">
+            <button onclick="addToCart('Omelette Nature', 300.00, 'quantity-omelette')">Commander</button>
+        </div>
+
+        <!-- Plat 7 -->
+        <div class="item">
+            <img src="./CANVA/Bouillie de Maise.jpg" alt="Bouillie de Maise">
+            <h3>Bouillie de Millet</h3>
+            <p>1 bole</p>
+            <p>Prix : 200.00 FCFA</p>
+            <label for="quantity-millet">Quantité :</label>
+            <input type="number" id="quantity-millet" min="1" value="1">
+            <button onclick="addToCart('Bouillie de Millet', 200.00, 'quantity-millet')">Commander</button>
+        </div>
+
+        <!-- Plat 8 -->
+        <div class="item">
+            <img src="./CANVA/fritte.jpg" alt="Patate Douce Grillée">
+            <h3>Patate Douce Grillée</h3>
+            <p>comme sur l'image</p>
+            <p>Prix : 500.00 FCFA</p>
+            <label for="quantity-patate-douce">Quantité :</label>
+            <input type="number" id="quantity-patate-douce" min="1" value="1">
+            <button onclick="addToCart('Patate Douce Grillée', 500.00, 'quantity-patate-douce')">Commander</button>
+        </div>
+
+        <!-- Plat 9 -->
+        <div class="item">
+            <img src="./CANVA/Baguette Farcie .jpg" alt="Baguette Farcie">
+            <h3>Baguette Farcie</h3>
+            <p>1 Baguette</p>
+            <p>Prix : 200.00 FCFA</p>
+            <label for="quantity-baguette">Quantité :</label>
+            <input type="number" id="quantity-baguette" min="1" value="1">
+            <button onclick="addToCart('Baguette Farcie', 250.00, 'quantity-baguette')">Commander</button>
+        </div>
+
+        <!-- Plat 10 -->
+        <div class="item">
+            <img src="./CANVA/Café Noir1.jpg" alt="Café Noir">
+            <h3>Café Noir</h3>
+            <p>1 tase</p>
+            <p>Prix : 300.00 FCFA</p>
+            <label for="quantity-cafe">Quantité :</label>
+            <input type="number" id="quantity-cafe" min="1" value="1">
+            <button onclick="addToCart('Café Noir', 300.00, 'quantity-cafe')">Commander</button>
+        </div>
+
+        <!-- Plat 11 -->
+        <div class="item">
+            <img src="./CANVA/Thé Citronné.jpg" alt="Thé">
+            <h3>Spagetti</h3>
+            <p>un plat</p>
+            <p>Prix : 750.00 FCFA</p>
+            <label for="quantity-the">Quantité :</label>
+            <input type="number" id="quantity-the" min="1" value="1">
+            <button onclick="addToCart('Spagetti', 750.00, 'quantity-the')">Commander</button>
+        </div>
+
+        <!-- Plat 12 -->
+        <div class="item">
+            <img src="./CANVA/Jus de Fruits Frais.jpg" alt="Jus de Fruits">
+            <h3>Jus de Fruits Frais</h3>
+            <p>1 boison</p>
+            <p>Prix : 500.00 FCFA</p>
+            <label for="quantity-jus">Quantité :</label>
+            <input type="number" id="quantity-jus" min="1" value="1">
+            <button onclick="addToCart('Jus de Fruits Frais', 500.00, 'quantity-jus')">Commander</button>
+        </div>
+        <!-- Plat 13 -->
+        <div class="item">
+            <img src="./CANVA/avocat.jpg" alt="Bouillie de Maise">
+            <h3>Bouillie de Millet</h3>
+            <p>1 bole</p>
+            <p>Prix : 200.00 FCFA</p>
+            <label for="quantity-millet">Quantité :</label>
+            <input type="number" id="quantity-millet" min="1" value="1">
+            <button onclick="addToCart('Bouillie de Millet', 200.00, 'quantity-millet')">Commander</button>
+        </div>
+        <!-- Plat 14 -->
+        <div class="item">
+            <img src="./CANVA/painvide.jpg" alt="Bouillie de Maise">
+            <h3>Bouillie de Millet</h3>
+            <p>1 bole</p>
+            <p>Prix : 200.00 FCFA</p>
+            <label for="quantity-millet">Quantité :</label>
+            <input type="number" id="quantity-millet" min="1" value="1">
+            <button onclick="addToCart('Bouillie de Millet', 200.00, 'quantity-millet')">Commander</button>
+        </div>
+        <!-- Plat 16 -->
+        <div class="item">
+            <img src="./CANVA/sandwich.jpg" alt="Bouillie de Maise">
+            <h3>Bouillie de Millet</h3>
+            <p>1 bole</p>
+            <p>Prix : 200.00 FCFA</p>
+            <label for="quantity-millet">Quantité :</label>
+            <input type="number" id="quantity-millet" min="1" value="1">
+            <button onclick="addToCart('Bouillie de Millet', 200.00, 'quantity-millet')">Commander</button>
+        </div>
+    </div>
+</section>
+<!-- Panier -->
+<section id="cart">
+    <h2>Votre Commande</h2>
+    <ul id="cart-items"></ul>
+    <h3 id="total-price">Total : 0.00 FCFA</h3>
+    <!-- Champs pour le numéro de téléphone et l'adresse -->
+<div id="order-details">
+    <label for="phone-number">Numéro de téléphone :</label>
+    <input type="text" id="phone-number" placeholder="Entrez votre numéro de téléphone" required>
+    
+    <label for="address">Adresse de livraison :</label>
+    <textarea id="address" placeholder="Entrez votre adresse complète" required></textarea>
+</div>
+
+    <button id="order-button" onclick="finalizeOrder()">Passer la Commande</button>
+</section>
+
+<!-- Pied de page -->
+<footer>
+    <p>&copy; 2024 Petit Déjeuner Gourmand | Le plaisir matinal.</p>
+</footer>
+
+<script src="script.js"></script>
+<script src="node.js"></script>
+<!-- Inclure Firebase -->
+<script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-firestore.js"></script>
+
+
+
+</body>
+</html>
